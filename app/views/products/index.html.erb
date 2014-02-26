@@ -1,0 +1,24 @@
+<h1>Products</h1>
+
+<p>
+  Download:
+  <%= link_to "CSV", products_path(format: "csv") %> |
+  <%= link_to "Excel", products_path(format: "xls") %>
+</p>
+
+<table id="products">
+  <tr>
+    <th>Value</th>
+    <th>Company</th>
+    <th>Dropdown</th>
+  </tr>
+ <% @products.each do |product| %>
+  <tr>
+    <td><%= product.value %></td>
+    <td><%= product.company %></td>
+    <td><%= product.dropdown %></td>
+  </tr>
+<% end %>
+</table>
+
+<p><%= link_to "Import products", new_product_import_path %></p>
