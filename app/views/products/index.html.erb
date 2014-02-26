@@ -2,12 +2,14 @@
 
 <p>
   Download:
-  <%= link_to "CSV", products_path(format: "csv") %> |
-  <%= link_to "Excel", products_path(format: "xls") %>
+ | <%= link_to "CSV", products_path(format: "csv") %> |
+  <%= link_to "Excel", products_path(format: "xls") %> |
+  <%= link_to "Import products", new_product_import_path %> |
 </p>
 
 <table id="products">
   <tr>
+    <th>ID</th>
     <th>Value</th>
     <th>Company</th>
     <th>Dropdown</th>
@@ -21,4 +23,5 @@
 <% end %>
 </table>
 
-<p><%= link_to "Import products", new_product_import_path %></p>
+
+
