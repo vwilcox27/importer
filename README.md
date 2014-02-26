@@ -1,4 +1,4 @@
-# My attempt at an Exporter/Importer from Ryan Bates's Railcast number #396
+My attempt at an Exporter/Importer from Ryan Bates's Railcast number #396
 
 Just a simple importer/exporter I am trying to create. I'm a total ruby nube/nerd.
 
